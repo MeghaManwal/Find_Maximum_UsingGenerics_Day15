@@ -29,17 +29,18 @@ public class FindMaximum {
 		     if(string[i].length() > elementLength) {
 		        index = i; elementLength =string[i].length();
 		    }
-		}
-		return string[index];
+		 }
+		 return string[index];
 	}
 	
 	public static <E extends Comparable<E>> E getMax_Value(E x, E y, E z) {
 		 E maxValue = x;
-		 if(y.compareTo(maxValue) > 0 )
+		 if(y.compareTo(maxValue) > 0 ) {
 			maxValue=y;
-		 if(z.compareTo(maxValue) > 0 )
+		 }	
+		 if(z.compareTo(maxValue) > 0 ) {
 			maxValue=z;	
-	
+		 }
 		 return maxValue;
 	}
 
