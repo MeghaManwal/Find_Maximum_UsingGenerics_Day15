@@ -24,6 +24,7 @@ public class Maximum<E extends Comparable<E>> {
 		 if(z.compareTo(maxValue) > 0 ) {
 			maxValue=z;	
 		 }
+		 printMax(x, y, z, maxValue);
 		 return maxValue;
 	}
 	
@@ -35,4 +36,8 @@ public class Maximum<E extends Comparable<E>> {
 		 }
 		 return maxValue;
 	} 
+	
+	public static <E> void printMax(E x, E y, E z, E maxValue) {
+		System.out.printf("Max of %s, %s, %s \n", x,y,z,maxValue);
+	}
 }
